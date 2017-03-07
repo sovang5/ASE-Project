@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.hp.hospitalmanagement.doctor_register"
-    android:background="@drawable/back">
+    android:background="@drawable/hospital">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,78 +19,12 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/textView2" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText_name"
-        android:layout_below="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Email ID"
-        android:ems="10"
-        android:layout_marginTop="12dp"
-        android:id="@+id/editText_emailid"
-        android:layout_below="@+id/editText_name"
-        android:layout_alignStart="@+id/editText_name" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:layout_marginTop="11dp"
-        android:id="@+id/editText_address"
-        android:text="Address"
-        android:layout_below="@+id/editText_emailid"
-        android:layout_alignStart="@+id/editText_emailid" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Contact Number"
-        android:ems="10"
-        android:layout_marginTop="12dp"
-        android:id="@+id/editText_phoneNo"
-        android:layout_below="@+id/editText_address"
-        android:layout_alignStart="@+id/editText_address" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Department"
-        android:ems="10"
-        android:layout_marginTop="13dp"
-        android:id="@+id/editText"
-        android:layout_below="@+id/editText_phoneNo"
-        android:layout_alignStart="@+id/editText_phoneNo" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/editText_password"
-        android:selectAllOnFocus="true"
-        android:text="Password"
-        android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_marginTop="15dp" />
-
     <Button
         android:text="Cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button_cancel"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:textColor="@android:color/background_light"
         android:layout_alignBaseline="@+id/button_register"
         android:layout_alignBottom="@+id/button_register"
@@ -102,11 +36,78 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button_register"
-        android:background="@color/colorPrimary"
+        android:background="?android:attr/colorPrimaryDark"
         android:textColor="@android:color/background_light"
         android:onClick="onClickReg"
-        android:layout_marginTop="18dp"
-        android:layout_below="@+id/editText_password"
-        android:layout_alignStart="@+id/editText_password" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText_password"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="56dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Email ID"
+        android:ems="10"
+        android:id="@+id/editText_emailid"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/editText_address"
+        android:layout_alignStart="@+id/editText_name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Contact Number"
+        android:ems="10"
+        android:id="@+id/editText_phoneNo"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText_address" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText_address"
+        android:text="Address"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/editText_phoneNo"
+        android:layout_alignStart="@+id/editText_emailid" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText_name"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/editText_emailid"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText_password"
+        android:selectAllOnFocus="true"
+        android:text="Password"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Department"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/editText_phoneNo"
+        android:layout_alignStart="@+id/editText_phoneNo"
+        android:layout_marginTop="9dp" />
 
 </RelativeLayout>
