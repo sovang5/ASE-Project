@@ -44,16 +44,16 @@
         android:text="Register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_register"
+        android:id="@+id/btnShowAlertDialog"
         android:background="@color/colorPrimaryDark"
         android:textColor="@android:color/background_light"
-        android:onClick="onClickRegis"
+        android:onClick="onShowAlertDialog"
         android:layout_alignBaseline="@+id/btn_login"
         android:layout_alignBottom="@+id/btn_login"
         android:layout_toEndOf="@+id/textView7" />
 
     <TextView
-        android:text="Login Information"
+        android:text="Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -72,7 +72,7 @@
         android:layout_marginTop="23dp"
         android:entries="@array/choose_pos"
         android:prompt="@string/select_pos"
-        android:layout_toStartOf="@+id/btn_register" />
+        android:layout_toStartOf="@+id/btnShowAlertDialog" />
 
     <Button
         android:text="Login"
