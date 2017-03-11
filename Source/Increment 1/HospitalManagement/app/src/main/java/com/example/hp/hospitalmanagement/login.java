@@ -57,7 +57,7 @@ public class login extends AppCompatActivity {
     }
 
 
-    public void onClickRegis(View v){
+    public void onShowAlertDialog(View v){
         Intent redirect = new Intent(login.this, patient_register.class);
         startActivity(redirect);
     }
