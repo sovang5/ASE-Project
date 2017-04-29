@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hospital Management System</string>
+    <string name="user_credentials">"USER_CREDENTIALS</string>
+    <string name="doctor_leaves">DOCTOR_LEAVES</string>
+    <string name="doctor_slot">DOCTOR_SLOT</string>
+    <string name="all_doctor_slots">all_doctor_slots</string>
+    <string name="all_pending_appointment">all_pending_appointment</string>
+    <string name="doctor_patient">DOCTOR_PATIENT</string>
+    <string name="staff">STAFF</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
