@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hospital Management</string>
+    <string name="select_pos">Select</string>
+
+    <string-array name="choose_pos">
+        <item>Select</item>
+        <item>Doctor</item>
+        <item>Patient</item>
+    </string-array>
+</resources>

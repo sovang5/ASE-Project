@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="doctors">
+        <item>Dr. Raj</item>
+        <item>Dr. Sovan</item>
+        <item>Dr. Ritika</item>
+        <item>Dr. Harmeet</item>
+
+    </string-array>
+</resources>
